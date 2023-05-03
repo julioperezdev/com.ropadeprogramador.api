@@ -25,8 +25,6 @@ public class CreateSessionIdByOneProductGateway extends FlashCookieConnection {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         httpHeaders.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        HttpEntity<CreateSessionIdByOneProductRequest> httpEntity = new HttpEntity<>(request, httpHeaders);
-        log.info(httpEntity.getBody().toString());
-        return httpEntity;
+        return new HttpEntity<>(request, httpHeaders);
     }
 }
