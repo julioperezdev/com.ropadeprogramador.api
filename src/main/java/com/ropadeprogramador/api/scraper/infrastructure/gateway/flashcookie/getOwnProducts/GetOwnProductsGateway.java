@@ -1,7 +1,6 @@
 package com.ropadeprogramador.api.scraper.infrastructure.gateway.flashcookie.getOwnProducts;
 
 import com.ropadeprogramador.api.scraper.infrastructure.gateway.flashcookie.FlashCookieConnection;
-import com.ropadeprogramador.api.scraper.infrastructure.gateway.flashcookie.FlaskCookieAbstractGetOwnProductsResponse;
 import com.ropadeprogramador.api.scraper.infrastructure.gateway.flashcookie.getOwnProducts.response.GetOwnProductsDataResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.*;
