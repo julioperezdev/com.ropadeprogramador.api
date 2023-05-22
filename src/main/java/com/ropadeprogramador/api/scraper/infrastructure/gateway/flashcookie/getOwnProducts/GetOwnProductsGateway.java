@@ -12,7 +12,7 @@ public class GetOwnProductsGateway extends FlashCookieConnection {
 
 
     public GetOwnProductsDataResponse start () throws Exception{
-        String ownProductsUrl = "https://api.flashcookieapi.com/api/v1/store/designs/julioperez";
+        String ownProductsUrl = "https://api.flashcookieapi.com/api/v1/store/designs/chan-chan";
         ResponseEntity<GetOwnProductsDataResponse> response = instanceRestTemplate().exchange(ownProductsUrl, HttpMethod.GET, null, GetOwnProductsDataResponse.class);
         if(!response.getStatusCode().isSameCodeAs(HttpStatus.OK)) return null;
         return response.getBody();
